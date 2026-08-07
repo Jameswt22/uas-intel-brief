@@ -1,29 +1,65 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>UAS DAILY INTELLIGENCE BRIEF</title>
 <style>
-  :root { --bg:#0a0d10; --fg:#e8edf2; --dim:#7c8a99; --accent:#00e08a; --rule:#1c242c; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg);
-         font:15px/1.5 "SF Mono",Consolas,"Roboto Mono",monospace; padding:40px 48px; }
-  header { border-bottom:2px solid var(--accent); padding-bottom:16px; margin-bottom:28px; }
-  h1 { font-size:22px; letter-spacing:.18em; margin:0 0 14px; font-weight:600; }
-  .bar { display:flex; gap:40px; flex-wrap:wrap; font-size:14px; }
-  .k { color:var(--dim); letter-spacing:.08em; font-size:11px; display:block; }
-  .v { color:var(--accent); font-size:19px; font-weight:600; }
-  .note { color:var(--dim); font-size:13px; border-top:1px solid var(--rule);
-          margin-top:36px; padding-top:14px; }
+ :root{--bg:#0a0d10;--fg:#e8edf2;--dim:#7c8a99;--accent:#00e08a;--rule:#1c242c;--amber:#ffb020;}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--fg);
+   font:14px/1.55 "SF Mono",Consolas,"Roboto Mono",monospace;padding:36px 44px}
+ header{border-bottom:2px solid var(--accent);padding-bottom:16px;margin-bottom:24px}
+ h1{font-size:21px;letter-spacing:.18em;margin:0 0 14px;font-weight:600}
+ .bar{display:flex;gap:44px;flex-wrap:wrap}
+ .k{color:var(--dim);letter-spacing:.09em;font-size:10px;display:block;margin-bottom:2px}
+ .v{color:var(--accent);font-size:20px;font-weight:600}
+ h2{font-size:11px;letter-spacing:.16em;color:var(--dim);margin:30px 0 10px;font-weight:600}
+ .row{padding:7px 0;border-bottom:1px solid var(--rule)}
+ .row.comp{border-left:2px solid var(--amber);padding-left:11px}
+ .w{color:var(--dim);font-style:italic}
+ .new{color:var(--accent);font-size:10px;letter-spacing:.1em;
+   border:1px solid var(--accent);padding:1px 5px;margin-right:7px}
+ .note{color:var(--dim);font-size:11.5px;border-top:1px solid var(--rule);
+   margin-top:32px;padding-top:14px;line-height:1.7}
 </style></head><body>
-<header>
-  <h1>UAS DAILY INTELLIGENCE BRIEF</h1>
-  <div class="bar">
-    <div><span class="k">LAST UPDATED</span><span class="v">2026-08-07 17:24 UTC</span></div>
-    <div><span class="k">AUTONOMOUS RUNS</span><span class="v">2</span></div>
-    <div><span class="k">STATUS</span><span class="v">PIPELINE LIVE</span></div>
-  </div>
-</header>
-<p class="note">Autonomy layer verified. Data pipelines (USAspending awards, SAM.gov
-solicitations) attach at step 2.</p>
-</body></html>
+<header><h1>UAS DAILY INTELLIGENCE BRIEF</h1>
+<div class="bar">
+ <div><span class="k">LAST UPDATED</span><span class="v">2026-08-07 17:34 UTC</span></div>
+ <div><span class="k">AUTONOMOUS RUNS</span><span class="v">3</span></div>
+ <div><span class="k">AWARDS TRACKED / 30D</span><span class="v">25</span></div>
+ <div><span class="k">COMPETITOR ACTIONS</span><span class="v">1</span></div>
+</div></header>
+<h2>AWARDED CONTRACTS &mdash; UAS / ISR</h2>
+<div class="row">Department of State &mdash; Quantum-Systems Inc &mdash; PURCHASE OF VECTOR DRONES SYSTEMS AND UPGRADES. &mdash; $19.6M &mdash; 2024-12-20 &mdash; CA</div>
+<div class="row">Federal Aviation Administration &mdash; Atac &mdash; TORFP 2321 - ROTORCRAFT/VERTICAL FLIGHT/EVTOL/AAM/UAM/GENERAL AVIATION, COMMERCIAL AVIATION, UNMANNED AIRCRAFT &mdash; $14.5M &mdash; 2023-11-01 &mdash; NJ <span class="w">&mdash; early-phase, capability shaping</span></div>
+<div class="row comp">Department of Energy &mdash; Anduril Industries, Inc. &mdash; THE TASK ORDER INCLUDES THE BASE YEAR TO INCLUDE OPERATIONS AND SUSTAINMENT. THE EFFORT SUPPORTS DEFENSE NUCLE &mdash; $5.8M &mdash; 2026-07-28 &mdash; CA <span class="w">&mdash; Anduril holds this scope; sustainment vehicle, recurring revenue profile</span></div>
+<div class="row">Office of Procurement Operations &mdash; The Mitre Corporation &mdash; THE PURPOSE OF THIS REQUISITION IS TO COMMIT $750,000.00 FOR A NEW TASK ORDER UNDER 70RSAT20D00000001 FOR UNMA &mdash; $3.7M &mdash; 2026-03-24 &mdash; VA</div>
+<div class="row">Federal Aviation Administration &mdash; I3 Federal Llc &mdash; EVALUATION OF HAZARDS POSED BY LITHIUM-BATTERY POWERED UNMANNED AIRCRAFT SYSTEMS AND OTHER DANGEROUS GOODS INT &mdash; $3.6M &mdash; 2023-09-11 &mdash; DC</div>
+<div class="row">Federal Aviation Administration &mdash; General Dynamics Information Technology, Inc. &mdash; UNMANNED AIRCRAFT SYSTEMS (UAS) FOR NAS INSPECTIONS &mdash; $1.8M &mdash; 2026-07-29 &mdash; NJ</div>
+<div class="row">Departmental Offices &mdash; Overwatch Aero Llc &mdash; EXCLUSIVE USE (EU) UNMANNED AIRCRAFT SYSTEMS (UAS) EMERGENCY FIRE FLIGHT SERVICES &mdash; $1.2M &mdash; 2026-06-15 &mdash; CA</div>
+<div class="row">U.S. Customs and Border Protection &mdash; The Rand Corporation &mdash; COUNTER UNMANNED AIRCRAFT SYSTEMS ANALYSIS OF ALTERNATIVES (C-UAS AOA) TO ASSIST WITH THE FUTURE ACQUISITION O &mdash; $789K &mdash; 2022-09-16 &mdash; CA <span class="w">&mdash; ground segment adjacency</span></div>
+<div class="row">Federal Aviation Administration &mdash; Delaney Advantage Technologies L.L.C. &mdash; SERVICES TO PROVIDE PROGRAM / CASE MANAGEMENT SUPPORT FOR THE SALESFORCE PLATFORM IN SUPPORT OF THE UNMANNED A &mdash; $786K &mdash; 2023-09-19 &mdash; DC</div>
+<div class="row">Environmental Protection Agency &mdash; Tetra Tech, Inc. &mdash; THE CONTRACTOR SHALL PROVIDE TECHNICAL ASSISTANCE FOR OPERATING UNMANNED AERIAL VEHICLES &amp; SYSTEMS ON NAVAJO N &mdash; $206K &mdash; 2023-07-25 &mdash; AZ</div>
+<div class="row">Departmental Offices &mdash; Caron East, Inc. &mdash; CARON EAST, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $128K &mdash; 2026-07-20 &mdash; MD</div>
+<div class="row">Departmental Offices &mdash; Skydio, Inc &mdash; SKYDIO, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $73K &mdash; 2026-06-04 &mdash; CA</div>
+<div class="row">Departmental Offices &mdash; Freefly Systems Inc &mdash; FREEFLY SYSTEM, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $45K &mdash; 2026-07-08 &mdash; WA</div>
+<div class="row">Departmental Offices &mdash; Freefly Systems Inc &mdash; FREEFLY SYSTEM, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $45K &mdash; 2026-07-28 &mdash; WA</div>
+<div class="row">Departmental Offices &mdash; Freefly Systems Inc &mdash; FREEFLY SYSTEM, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $45K &mdash; 2026-07-28 &mdash; WA</div>
+<div class="row">Departmental Offices &mdash; Skydio, Inc &mdash; SKYDIO, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $42K &mdash; 2026-06-23 &mdash; CA</div>
+<div class="row">Departmental Offices &mdash; Skydio, Inc &mdash; SKYDIO, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $31K &mdash; 2026-08-03 &mdash; CA</div>
+<div class="row">U.S. Customs and Border Protection &mdash; Atlantic Diving Supply, Inc. &mdash; USBP SAN DIEGO SECTOR PURCHASE OF 1 KSDIO X10D DRONE PLUS ACCESSORIES &mdash; $30K &mdash; 2026-08-03 &mdash; CA <span class="w">&mdash; ground segment adjacency</span></div>
+<div class="row">U.S. Immigration and Customs Enforcement &mdash; Atlantic Diving Supply, Inc. &mdash; THIS AWARD PROCURES SMALL UNMANNED AIRCRAFT SYSTEM WHICH PROVIDES HOMELAND SECURITY INVESTIGATION PERSONNEL WI &mdash; $29K &mdash; 2026-08-05 &mdash; VA</div>
+<div class="row">Departmental Offices &mdash; Skydio, Inc &mdash; SKYDIO, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $29K &mdash; 2026-06-24 &mdash; CA</div>
+<div class="row">Departmental Offices &mdash; Skydio, Inc &mdash; SKYDIO, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $28K &mdash; 2026-08-03 &mdash; CA</div>
+<div class="row">Departmental Offices &mdash; Skydio, Inc &mdash; SKYDIO, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UA &mdash; $28K &mdash; 2026-07-15 &mdash; CA</div>
+<div class="row">Departmental Offices &mdash; Freefly Systems Inc &mdash; FREEFLY SYSTEM, LNC BLANKET PURCHASE AGREEMENT CALL ORDER FOR THE PURCHASE OF UNMANNED AERIAL SYSTEM (UAS) &mdash; $18K &mdash; 2026-07-08 &mdash; WA</div>
+<div class="row">Drug Enforcement Administration &mdash; Atlantic Diving Supply, Inc. &mdash; ELP/ADS/DRONEROBOT  REQUESTOR: FRANCES M MARTINEZ DELIVERY DATE: 07/01/2026 &mdash; $14K &mdash; 2026-07-28 &mdash; VA</div>
+<div class="row">U.S. Immigration and Customs Enforcement &mdash; Flightwave Aerospace Systems Corporation &mdash; SMALL UNMANNED AERIAL SYSTEM (SUAS) &mdash; $0 &mdash; 2024-08-14 &mdash; CA</div>
+<p class="note">
+Source: USAspending.gov API (federal awards). Awards are <b>executed contracts</b>, not open
+solicitations, and reporting lags several weeks &mdash; this is a rear-view feed of where money
+has already moved. Open solicitations (SAM.gov) attach once API credentials are issued.<br>
+Relevance filtering is a keyword and agency heuristic; federal award data carries no
+UAS-platform tag, so inclusion is approximate. Why-it-matters clauses are deterministic
+rules over award fields, not model-generated.<br>
+Amber rule = tracked competitor. Runs unattended on GitHub Actions every 6 hours.
+</p></body></html>
